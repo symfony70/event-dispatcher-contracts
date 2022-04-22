@@ -1,8 +1,8 @@
 {
-    "name": "symfony/event-dispatcher-contracts",
+    "name": "symfony70/event-dispatcher-contracts",
     "type": "library",
-    "description": "Generic abstractions related to dispatching event",
-    "keywords": ["abstractions", "contracts", "decoupling", "interfaces", "interoperability", "standards"],
+    "description": "PHP 7.0 support for: Generic abstractions related to dispatching event",
+    "keywords": ["abstractions", "contracts", "decoupling", "interfaces", "interoperability", "standards", "PHP 7.0"],
     "homepage": "https://symfony.com",
     "license": "MIT",
     "authors": [
@@ -16,8 +16,8 @@
         }
     ],
     "require": {
-        "php": ">=8.1",
-        "psr/event-dispatcher": "^1"
+        "php": ">=7.0",
+        "psr70/event-dispatcher": "dev-master"
     },
     "suggest": {
         "symfony/event-dispatcher-implementation": ""
@@ -34,5 +34,8 @@
             "name": "symfony/contracts",
             "url": "https://github.com/symfony/contracts"
         }
+    },
+    "replace": {
+        "symfony/event-dispatcher-contracts": "*"
     }
 }
